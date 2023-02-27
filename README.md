@@ -8,7 +8,7 @@ This is a minimalist, beautiful, responsive blogging program written in Astro.
 
 ### Home
 
-![首页](https://cos.lookcos.cn/blog/static/images/preview/preview_index.png)
+![首页](https://ibb.co/f439jSx)
 
 ### Dark mode
 
