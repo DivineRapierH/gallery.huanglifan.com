@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Tile from "../layouts/Tile.astro";
 import MoreTile from "../layouts/MoreTile.astro";
+import Tile from "../layouts/Tile.astro";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 ---
@@ -9,7 +9,7 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
 <BaseLayout>
   <section class="everydayfeed">
     <div class="section-content">
-      <h2 class="section-head">最新文章</h2>
+      <h2 class="section-head">Latests</h2>
       <ul role="list" class="section-tiles">
         {
           // tile-hero
@@ -43,7 +43,7 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
 
   <section class="more-from-newsroom">
     <div class="section-content">
-      <h2 class="section-head">更多文章</h2>
+      <h2 class="section-head">Read more</h2>
    
 
       <ul role="list" class="section-tiles">

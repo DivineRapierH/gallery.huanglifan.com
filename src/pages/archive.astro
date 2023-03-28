@@ -1,8 +1,8 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import ArchivePostList from "../layouts/ArchivePostList.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 const allPosts = await Astro.glob("./posts/*.md");
-const tags = ["新闻稿", "虚幻引擎", "源码研究"];
+const tags = ["Photography", "Coding", "Random Roaming"];
 const posts = [];
 
 tags.forEach((tag) => {
@@ -11,7 +11,7 @@ tags.forEach((tag) => {
 });
 ---
 
-<BaseLayout primaryTitle="归档">
+<BaseLayout primaryTitle="Archive">
   <section class="archive">
     <div class="section-content section-tag">
       {
@@ -19,7 +19,7 @@ tags.forEach((tag) => {
           return (
             <div class="archive-tag">
               <h2 class="tag-header">{tag}</h2>
-              <div class="tag-post-list">{posts[index].length !== 0 ? <ArchivePostList posts={posts[index]} /> : <div class="no-posts">暂无文章</div>}</div>
+              <div class="tag-post-list">{posts[index].length !== 0 ? <ArchivePostList posts={posts[index]} /> : <div class="no-posts">Under construction...</div>}</div>
             </div>
           );
         })
