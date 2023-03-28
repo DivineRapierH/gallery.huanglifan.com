@@ -1,5 +1,5 @@
 ---
-import { SITE_EMAIL,SITE_NAME,SITE_TITLE } from "../consts";
+import { SITE_NAME,SITE_TITLE } from "../consts";
 const { theme } = Astro.props;
 const date = new Date();
 const year = date.getFullYear();
@@ -12,7 +12,6 @@ const year = date.getFullYear();
         <div class="foot-nav-items">
           <div class="item">
             <div class="logo">{SITE_TITLE}</div>
-            <div class="email">Email: {SITE_EMAIL}</div>
           </div>
 
           <div class="item community">
